@@ -15,7 +15,7 @@ exports.run =  (bot, message, args) => {
     let scoutstat = db.fetch(`scoutstat_${message.author.id}`);
     if (gems < 5) {message.channel.send(`${user}, <:nicoicon:589038016358514698> You don't have enough gem <:Gems:584947389459333142>!`)
         } else {
-            number = 2064;
+            number = 2691;
             imageNumber = Math.floor (Math.random() * (number - 1 + 1)) + 1;
             db.subtract(`gems_${message.author.id}`, 5);
             db.add(`scoutstat_${message.author.id}`, 1);
